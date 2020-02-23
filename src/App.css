@@ -7,17 +7,28 @@ body {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 
 h2 {
-  font-size: 2.7rem;
+  font-size: 3.2rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  color: gray;
+}
 .App {
   text-align: center;
 }
@@ -54,4 +65,8 @@ h3 {
   to {
     transform: rotate(360deg);
   }
+}
+
+.image {
+  max-width: 50vw;
 }
