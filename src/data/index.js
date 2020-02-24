@@ -4,7 +4,6 @@ export const projects = [
     url: "https://kyle-todo.netlify.com",
     image: "./images/to-do.png",
     tools: ["css3", "html5", "react"],
-    libraries: [""],
     notes: ""
   },
   {
@@ -12,7 +11,6 @@ export const projects = [
     url: "https://kyle-lambda-calculator.netlify.com",
     image: "./images/calculator.png",
     tools: ["css3", "html5", "react"],
-    libraries: [""],
     notes: ""
   },
   {
@@ -20,7 +18,6 @@ export const projects = [
     url: "https://kyle-github-network.netlify.com",
     image: "./images/github.png",
     tools: ["css3", "html5", "react"],
-    libraries: [""],
     notes: ""
   },
 
@@ -29,15 +26,14 @@ export const projects = [
     url: "https://kyle-nasa-potd.netlify.com",
     image: "./images/nasa.jpg",
     tools: ["css3", "html5", "react"],
-    libraries: [""],
     notes: ""
   },
   {
     name: "Weightlifting Journal",
     url: "https://weightlifting-journal.netlify.com/",
-    image: "",
+    image: "./images/weightlifting.png",
     tools: ["css3", "html5", "react", "node-js"],
-    libraries: ["material_ui", "redux"],
+    libraries: ["Material UI", "Redux"],
     notes: "Team project"
   }
 ];
@@ -47,6 +43,5 @@ export const resume = {
   url: "https://www.kylerichardson.tech",
   image: "",
   tools: ["css3, html5"],
-  libraries: [""],
   notes: ""
 };

@@ -7,14 +7,20 @@ body {
 }
 
 h1 {
+  padding: 10px;
+  margin: 0 auto;
   font-size: 4rem;
 }
 
 h2 {
+  padding: 10px;
+  margin: 0 auto;
   font-size: 3.2rem;
 }
 
 h3 {
+  padding: 10px;
+  margin: 0 auto;
   font-size: 2.5rem;
 }
 
@@ -28,6 +34,15 @@ a:hover {
 }
 a:active {
   color: gray;
+}
+
+p {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 1rem;
+}
+span {
+  font-size: 1.5rem;
 }
 .App {
   text-align: center;
@@ -69,4 +84,27 @@ a:active {
 
 .image {
   max-width: 50vw;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.icons-container {
+  margin-bottom: 10px;
+}
+
+.footer-container {
+  padding: 20px;
+  background-color: #69868c;
+  color: #f2f2f2;
+  text-align: center;
+}
+
+.even-styles {
+  background-color: #282c34;
+}
+
+.odd-styles {
+  background-color: #69868c;
 }
