@@ -1,5 +1,12 @@
 import React from "react";
 import Button from "@material-ui/core/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faReact,
+  faCss3,
+  faHtml5,
+  faNodeJs
+} from "@fortawesome/free-brands-svg-icons";
 
 const TopSection = () => {
   return (
@@ -9,10 +16,22 @@ const TopSection = () => {
       <div id="projects">
         <p>Filter projects by:</p>
         <div className="button-container">
-          <Button color="primary">CSS3</Button>
-          <Button color="secondary">HTML5</Button>
-          <Button color="primary">React</Button>
-          <Button color="secondary">NodeJs</Button>
+          <Button color="primary">
+            <FontAwesomeIcon icon={faCss3} />
+            {`CSS3`}
+          </Button>
+          <Button color="secondary">
+            <FontAwesomeIcon icon={faHtml5} />
+            {`HTML5`}
+          </Button>
+          <Button color="primary">
+            <FontAwesomeIcon icon={faReact} />
+            {`React`}
+          </Button>
+          <Button color="secondary">
+            <FontAwesomeIcon icon={faNodeJs} />
+            {`NodeJs`}
+          </Button>
         </div>
       </div>
     </header>
