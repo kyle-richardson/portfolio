@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  color: white;
   font-size: 1.3rem;
 }
 
@@ -26,7 +27,7 @@ h3 {
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 a:hover {
@@ -59,14 +60,20 @@ span {
   }
 }
 
-.App-header {
+#App-header {
   background-color: #282c34;
+  padding-top: 20px;
   min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   color: white;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 50vw;
 }
 
 .App-link {
@@ -82,6 +89,13 @@ span {
   }
 }
 
+.header {
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 5px;
+  background-color: #282c34;
+}
+
 .image {
   max-width: 50vw;
 }
@@ -94,8 +108,12 @@ span {
   margin-bottom: 10px;
 }
 
+.footer-icons > * {
+  margin-right: 10px;
+}
+
 .footer-container {
-  padding: 20px;
+  padding-top: 20px;
   background-color: #69868c;
   color: #f2f2f2;
   text-align: center;

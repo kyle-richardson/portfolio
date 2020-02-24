@@ -4,7 +4,7 @@ import { projects } from "../../data";
 
 const ProjList = () => {
   return (
-    <div>
+    <div id="projects">
       {projects.map((proj, id) => {
         return (
           <Proj
