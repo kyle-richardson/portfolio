@@ -54,12 +54,6 @@ span {
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 #App-header {
   background-color: #282c34;
   padding-top: 20px;
@@ -91,9 +85,16 @@ span {
 
 .header {
   text-align: left;
-  padding-left: 10px;
-  padding-top: 5px;
   background-color: #282c34;
+  opacity: 0.9;
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.menu-modal {
+  opacity: 1;
+  padding-left: 20px;
 }
 
 .image {
@@ -102,10 +103,6 @@ span {
 
 .icon {
   margin-right: 10px;
-}
-
-.icons-container {
-  margin-bottom: 10px;
 }
 
 .footer-icons > * {
@@ -117,12 +114,17 @@ span {
   background-color: #69868c;
   color: #f2f2f2;
   text-align: center;
+  border-top: 1px solid white;
 }
 
 .even-styles {
   background-color: #282c34;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .odd-styles {
   background-color: #69868c;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }

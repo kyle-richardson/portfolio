@@ -14,7 +14,7 @@ const MenuModal = () => {
     setAnchorEl(null);
   };
   return (
-    <div className="header">
+    <div className="menu-modal">
       <div onClick={handleClick} style={{ cursor: "pointer" }}>
         <MenuIcon fontSize="large" />
       </div>
@@ -36,7 +36,7 @@ const MenuModal = () => {
         <MenuItem onClick={() => (window.location.href = "#projects")}>
           Projects
         </MenuItem>
-        <MenuItem onClick={() => (window.location.href = "#app-header")}>
+        <MenuItem onClick={() => (window.location.href = "#App-header")}>
           Go to top
         </MenuItem>
       </Menu>

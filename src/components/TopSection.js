@@ -6,7 +6,7 @@ const TopSection = () => {
     <header id="App-header">
       <h1>Kyle Richardson - Portfolio</h1>
       <h3>Full-stack developer</h3>
-      <div>
+      <div id="projects">
         <p>Filter projects by:</p>
         <div className="button-container">
           <Button color="primary">CSS3</Button>
