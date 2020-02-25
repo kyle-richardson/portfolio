@@ -1,5 +1,13 @@
 export const projects = [
   {
+    name: "Digital Resume",
+    url: "https://www.kylerichardson.tech",
+    github: "https://github.com/kyle-richardson/kyle-richardson.github.io",
+    image: "./images/resume.png",
+    tools: ["css3, html5", "less"],
+    notes: ""
+  },
+  {
     name: "Todo List",
     url: "https://kyle-todo.netlify.com",
     github: "https://github.com/kyle-richardson/React-Todo/",
@@ -41,11 +49,3 @@ export const projects = [
     notes: "Team project"
   }
 ];
-
-export const resume = {
-  name: "Digital Resume",
-  url: "https://www.kylerichardson.tech",
-  image: "",
-  tools: ["css3, html5", "less"],
-  notes: ""
-};
