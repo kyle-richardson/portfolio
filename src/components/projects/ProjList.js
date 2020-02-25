@@ -14,6 +14,7 @@ const ProjList = ({ searchList }) => {
     } else {
       setProjectList(projects);
     }
+    // eslint-disable-next-line
   }, [searchList]);
 
   return (
