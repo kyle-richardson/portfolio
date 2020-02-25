@@ -4,7 +4,7 @@ export const projects = [
     url: "https://www.kylerichardson.tech",
     github: "https://github.com/kyle-richardson/kyle-richardson.github.io",
     image: "./images/resume.png",
-    tools: ["css3, html5", "less"],
+    tools: ["css3", "html5", "less"],
     notes: ""
   },
   {
