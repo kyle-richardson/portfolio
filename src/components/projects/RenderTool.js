@@ -1,15 +1,9 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import {
-  faReact,
-  faCss3,
-  faHtml5,
-  faNodeJs
-} from "@fortawesome/free-brands-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 
-library.add(fab, faReact, faCss3, faHtml5, faNodeJs);
+library.add(fab);
 
 const RenderTool = ({ tool }) => {
   return (

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import { Route } from "react-router-dom";
+// import { Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ProjList from "./components/projects/ProjList";

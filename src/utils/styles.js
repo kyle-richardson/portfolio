@@ -21,6 +21,15 @@ export const StyledButton = withStyles({
 export const ButtonStyles = makeStyles({
   root: {
     borderRadius: 4,
+    border: props => {
+      if (props.list && props.list.includes(props.color)) {
+        if (props.color === "css3") return "1px solid rgb(47, 47, 252)";
+        if (props.color === "html5") return "1px solid orange";
+        if (props.color === "react") return "1px solid lightblue";
+        if (props.color === "node-js") return "1px solid lightgreen";
+        if (props.color === "python") return "1px solid rgb(204, 204, 17)";
+      } else return "1px solid #282c34";
+    },
     color: props => {
       if (props.list && props.list.includes(props.color)) {
         if (props.color === "css3") return "rgb(47, 47, 252)";
