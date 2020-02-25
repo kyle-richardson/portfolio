@@ -13,16 +13,28 @@ const Proj = props => {
           display: "flex",
           justifyContent: "space-between",
           width: "50vw",
-          margin: "0 auto",
+          margin: "10px auto",
           alignItems: "center"
         }}
       >
-        <LanguageIcon fontSize="large" />
+        <div
+          title="Visit Site"
+          style={{ cursor: "pointer" }}
+          onClick={() => (window.location.href = props.url)}
+        >
+          <LanguageIcon fontSize="large" />
+        </div>
         <h3>{props.name}</h3>
-        <CodeIcon fontSize="large" />
+        <div
+          title="View Code"
+          style={{ cursor: "pointer" }}
+          onClick={() => (window.location.href = props.github)}
+        >
+          <CodeIcon fontSize="large" />
+        </div>
       </div>
 
-      <a href={props.url} target={props.url} rel="noopener">
+      <a title="Visit Site" href={props.url} target={props.url} rel="noopener">
         <img className="image" src={props.image} alt={props.name} />
       </a>
       <br />
