@@ -62,7 +62,8 @@ span {
 .button-container {
   display: flex;
   justify-content: space-between;
-  width: 60vw;
+  flex-wrap: wrap;
+  width: 80vw;
 }
 
 .App-link {
