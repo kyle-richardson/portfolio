@@ -20,6 +20,7 @@ export const StyledButton = withStyles({
 
 export const ButtonStyles = makeStyles({
   root: {
+    height: "35px",
     borderRadius: 4,
     border: props => {
       if (props.list && props.list.includes(props.color)) {
@@ -53,6 +54,9 @@ export const ButtonStyles = makeStyles({
         if (props.color === "node-js") return "lightgreen";
         if (props.color === "python") return "rgb(204, 204, 17)";
       }
+    },
+    "@media (max-width: 750)": {
+      marginLeft: "15px"
     }
   }
 });

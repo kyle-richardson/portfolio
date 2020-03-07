@@ -8,15 +8,7 @@ import RenderTool from "./RenderTool";
 const Proj = props => {
   return (
     <div className={props.type}>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          width: "50vw",
-          margin: "10px auto",
-          alignItems: "center"
-        }}
-      >
+      <div className="proj-title">
         <div
           title="Visit Site"
           style={{ cursor: "pointer" }}

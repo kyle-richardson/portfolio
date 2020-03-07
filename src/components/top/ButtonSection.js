@@ -31,49 +31,63 @@ const ButtonSection = ({ searchList, setSearchList }) => {
           className={ButtonStyles({ color: "html5", list: searchList }).root}
         >
           <FontAwesomeIcon icon={faHtml5} />
-          <span style={{ marginLeft: "4px" }}>HTML5</span>
+          <span className="button-names" style={{ marginLeft: "4px" }}>
+            HTML5
+          </span>
         </Button>
         <Button
           onClick={() => toggleSearch("css3")}
           className={ButtonStyles({ color: "css3", list: searchList }).root}
         >
           <FontAwesomeIcon icon={faCss3} />
-          <span style={{ marginLeft: "4px" }}>CSS3</span>
+          <span className="button-names" style={{ marginLeft: "4px" }}>
+            CSS3
+          </span>
         </Button>
         <Button
           onClick={() => toggleSearch("less")}
           className={ButtonStyles({ color: "less", list: searchList }).root}
         >
           <FontAwesomeIcon icon={faLess} size="lg" />
-          <span style={{ marginLeft: "4px" }}>LESS</span>
+          <span className="button-names" style={{ marginLeft: "4px" }}>
+            LESS
+          </span>
         </Button>
         <Button
           onClick={() => toggleSearch("js")}
           className={ButtonStyles({ color: "js", list: searchList }).root}
         >
           <FontAwesomeIcon icon={faJs} />
-          <span style={{ marginLeft: "4px" }}>JS</span>
+          <span className="button-names" style={{ marginLeft: "4px" }}>
+            JS
+          </span>
         </Button>
         <Button
           onClick={() => toggleSearch("react")}
           className={ButtonStyles({ color: "react", list: searchList }).root}
         >
           <FontAwesomeIcon icon={faReact} />
-          <span style={{ marginLeft: "4px" }}>REACT</span>
+          <span className="button-names" style={{ marginLeft: "4px" }}>
+            REACT
+          </span>
         </Button>
         <Button
           onClick={() => toggleSearch("node-js")}
           className={ButtonStyles({ color: "node-js", list: searchList }).root}
         >
           <FontAwesomeIcon icon={faNodeJs} />
-          <span style={{ marginLeft: "4px" }}>NODEJS</span>
+          <span className="button-names" style={{ marginLeft: "4px" }}>
+            NODEJS
+          </span>
         </Button>
         <Button
           onClick={() => toggleSearch("python")}
           className={ButtonStyles({ color: "python", list: searchList }).root}
         >
           <FontAwesomeIcon icon={faPython} />
-          <span style={{ marginLeft: "4px" }}>PYTHON</span>
+          <span className="button-names" style={{ marginLeft: "4px" }}>
+            PYTHON
+          </span>
         </Button>
       </div>
     </div>
