@@ -54,9 +54,6 @@ export const ButtonStyles = makeStyles({
         if (props.color === "node-js") return "lightgreen";
         if (props.color === "python") return "rgb(204, 204, 17)";
       }
-    },
-    "@media (max-width: 750)": {
-      marginLeft: "15px"
     }
   }
 });
