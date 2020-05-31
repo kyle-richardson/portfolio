@@ -2,7 +2,7 @@ import React from "react";
 import CarouselSection from "./CarouselSection";
 import ButtonSection from "./ButtonSection";
 
-const TopSection = props => {
+const TopSection = (props) => {
   return (
     <header id="App-header">
       <h1>Kyle Richardson - Portfolio</h1>
