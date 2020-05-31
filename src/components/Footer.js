@@ -7,15 +7,27 @@ const Footer = () => {
   return (
     <div className="footer-container">
       <div className="footer-icons">
-        <a className="mail-icon" href="mailto:kyle.richardson1@gmail.com">
+        <a
+          className="mail-icon"
+          href="mailto:kyle.richardson1@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FontAwesomeIcon icon={faEnvelope} size="2x" />
         </a>
-        <a className="github-icon" href="https://github.com/kyle-richardson">
+        <a
+          className="github-icon"
+          href="https://github.com/kyle-richardson"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FontAwesomeIcon icon={faGithub} size="2x" />
         </a>
         <a
           className="linkedin-icon"
           href="https://linkedin.com/in/kyle-m-richardson"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faLinkedin} size="2x" />
         </a>
