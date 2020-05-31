@@ -16,7 +16,7 @@ const Proj = (props) => {
         <div
           title="Visit Site"
           style={{ cursor: "pointer" }}
-          onClick={() => (window.location.href = props.url)}
+          onClick={() => window.open(props.url, "_blank")}
         >
           <LanguageIcon fontSize="large" />
         </div>
@@ -24,7 +24,7 @@ const Proj = (props) => {
         <div
           title="View Code"
           style={{ cursor: "pointer" }}
-          onClick={() => (window.location.href = props.github)}
+          onClick={() => window.open(props.github, "_blank")}
         >
           <CodeIcon fontSize="large" />
         </div>
