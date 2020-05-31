@@ -4,7 +4,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ProjList from "./components/projects/ProjList";
-import TopSection from "./components/TopSection";
+import TopSection from "./components/top/TopSection";
 
 function App() {
   const [searchList, setSearchList] = useState([]);

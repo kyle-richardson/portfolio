@@ -61,8 +61,10 @@ span {
 }
 .button-container {
   display: flex;
-  justify-content: space-between;
-  width: 60vw;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80vw;
+  align-items: center;
 }
 
 .App-link {
@@ -128,11 +130,44 @@ span {
   padding-bottom: 10px;
   padding-top: 10px;
 }
+.proj-title {
+  display: flex;
+  justify-content: space-between;
+  width: 50vw;
+  margin: 10px auto;
+  align-items: center;
+}
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
+  body {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 3.3rem;
+  }
+  h2 {
+    font-size: 2.7rem;
+  }
+  h3 {
+    font-size: 2.2rem;
+  }
   .button-container {
+    width: 90vw;
+  }
+  .image {
+    max-width: 65vw;
+  }
+
+  .button-names {
+    display: none;
+  }
+
+  .proj-title {
     width: 80vw;
   }
+}
+
+@media (max-width: 550px) {
   .image {
     max-width: 80vw;
   }
