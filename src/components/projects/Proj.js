@@ -44,7 +44,7 @@ const Proj = (props) => {
               <span title={props.deployed}>
                 <InlineIcon
                   icon={
-                    props.deployed === "github"
+                    props.deployed === "github pages"
                       ? githubIcon
                       : props.deployed === "netlify"
                       ? netlifyIcon
@@ -64,8 +64,10 @@ const Proj = (props) => {
       {!!props.libraries && (
         <>
           <span>Libraries: </span>
-          {props.libraries.map((lib) => (
-            <span key={lib}>{lib}, </span>
+          {props.libraries.map((lib, ind) => (
+            <span key={lib}>
+              {ind !== props.libraries.length - 1 ? `${lib}, ` : `${lib}`}
+            </span>
           ))}
         </>
       )}

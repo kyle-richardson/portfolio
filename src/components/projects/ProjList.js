@@ -7,8 +7,8 @@ const ProjList = ({ searchList }) => {
 
   useEffect(() => {
     if (searchList.length > 0) {
-      const newList = projectList.filter(proj =>
-        searchList.every(item => proj.tools.includes(item))
+      const newList = projects.filter((proj) =>
+        searchList.every((item) => proj.tools.includes(item))
       );
       setProjectList(newList);
     } else {

@@ -5,7 +5,7 @@ export const projects = [
     github: "https://github.com/kyle-richardson/kyle-richardson.github.io",
     image: `${process.env.PUBLIC_URL}/assets/images/resume.png`,
     tools: ["html5", "css3", "less"],
-    deployed: "github",
+    deployed: "github pages",
     notes: "",
   },
   {
@@ -47,7 +47,7 @@ export const projects = [
   },
   {
     name: "Weightlifting Journal",
-    url: "https://weightlifting-journal.netlify.com/",
+    url: "https://weightlifting-journal.netlify.com/register",
     github: "https://github.com/BW-WeightLiftingJournal",
     image: `${process.env.PUBLIC_URL}/assets/images/weightlifting.png`,
     tools: ["html5", "css3", "less", "js", "react", "node-js"],
