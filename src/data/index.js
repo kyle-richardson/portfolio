@@ -5,7 +5,7 @@ export const projects = [
     github: "https://github.com/kyle-richardson/kyle-richardson.github.io",
     image: `${process.env.PUBLIC_URL}/assets/images/resume.png`,
     tools: ["html5", "css3", "less"],
-    deployed: "github",
+    deployed: "github pages",
     notes: "",
   },
   {
