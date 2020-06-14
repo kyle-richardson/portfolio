@@ -8,21 +8,21 @@ export const StyledButton = withStyles({
     margin: "10px 0",
     height: "50px",
     "&:hover": {
-      background: "rgb(250, 102, 102)"
-    }
+      background: "rgb(250, 102, 102)",
+    },
   },
   label: {
     textTransform: "uppercase",
     color: "white",
-    fontSize: "1.5rem"
-  }
+    fontSize: "1.5rem",
+  },
 })(Button);
 
 export const ButtonStyles = makeStyles({
   root: {
     height: "35px",
     borderRadius: 4,
-    border: props => {
+    border: (props) => {
       if (props.list && props.list.includes(props.color)) {
         if (props.color === "css3") return "1px solid rgb(47, 47, 252)";
         if (props.color === "html5") return "1px solid orange";
@@ -31,9 +31,9 @@ export const ButtonStyles = makeStyles({
         if (props.color === "react") return "1px solid lightblue";
         if (props.color === "node-js") return "1px solid lightgreen";
         if (props.color === "python") return "1px solid rgb(204, 204, 17)";
-      } else return "1px solid #282c34";
+      } else return "0";
     },
-    color: props => {
+    color: (props) => {
       if (props.list && props.list.includes(props.color)) {
         if (props.color === "css3") return "rgb(47, 47, 252)";
         if (props.color === "html5") return "orange";
@@ -42,10 +42,10 @@ export const ButtonStyles = makeStyles({
         if (props.color === "react") return "lightblue";
         if (props.color === "node-js") return "lightgreen";
         if (props.color === "python") return "rgb(204, 204, 17)";
-      } else return "lightgray";
+      } else return props.dark ? "lightgray" : "#282c34";
     },
     "&:hover": {
-      color: props => {
+      color: (props) => {
         if (props.color === "css3") return "rgb(47, 47, 252)";
         if (props.color === "html5") return "orange";
         if (props.color === "less") return "rgb(171, 27, 190)";
@@ -53,7 +53,7 @@ export const ButtonStyles = makeStyles({
         if (props.color === "react") return "lightblue";
         if (props.color === "node-js") return "lightgreen";
         if (props.color === "python") return "rgb(204, 204, 17)";
-      }
-    }
-  }
+      },
+    },
+  },
 });

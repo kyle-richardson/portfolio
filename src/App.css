@@ -1,10 +1,11 @@
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
-  color: white;
   font-size: 1.3rem;
+  height: 100%;
 }
 
 h1 {
@@ -27,9 +28,11 @@ h3 {
 
 a {
   text-decoration: none;
-  color: white;
 }
-
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
 a:hover {
   text-decoration: underline;
 }
@@ -47,17 +50,24 @@ span {
 }
 .App {
   text-align: center;
+  height: 100%;
+  color: #282c34;
+}
+.dark-mode {
+  color: white;
+}
+
+.dark-mode-background {
+  background-color: #282c34;
 }
 
 #App-header {
-  background-color: #282c34;
   padding-top: 20px;
   min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  color: white;
 }
 .button-container {
   display: flex;
@@ -71,22 +81,17 @@ span {
   color: #61dafb;
 }
 
-.header {
-  text-align: left;
-  background-color: #282c34;
-  opacity: 0.9;
-  position: fixed;
-  width: 100%;
-  padding: 20px 0;
-}
-
 .menu-modal {
   opacity: 1;
   padding-left: 20px;
 }
 
 .image {
+  align-self: center;
   max-width: 50vw;
+  transition: all 0.3s ease;
+  height: 100%;
+  position: relative;
 }
 
 .icon {
@@ -113,22 +118,22 @@ span {
 
 .footer-container {
   padding-top: 20px;
-  background-color: #69868c;
-  color: #f2f2f2;
   text-align: center;
   border-top: 2px solid white;
 }
 
 .even-styles {
-  background-color: #282c34;
   padding-bottom: 10px;
   padding-top: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .odd-styles {
-  background-color: #69868c;
   padding-bottom: 10px;
   padding-top: 10px;
+  display: flex;
+  flex-direction: column;
 }
 .proj-title {
   display: flex;
@@ -136,6 +141,27 @@ span {
   width: 50vw;
   margin: 10px auto;
   align-items: center;
+}
+
+.overlay-text {
+  position: relative;
+  /* bottom: 20%;
+  right: 50%; */
+  top: -30vh;
+  opacity: 1;
+  /* z-index: 5; */
+}
+
+.show-overlay {
+  opacity: 0.3;
+}
+
+.show {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 @media (max-width: 750px) {

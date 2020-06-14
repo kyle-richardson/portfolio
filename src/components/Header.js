@@ -1,12 +1,11 @@
 import React from "react";
 import MenuModal from "./MenuModal";
+import Menu from "./Menu";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <div className="header">
-      <div>
-        <MenuModal />
-      </div>
+      <Menu {...props} />
     </div>
   );
 };

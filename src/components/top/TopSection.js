@@ -1,5 +1,5 @@
 import React from "react";
-import CarouselSection from "./CarouselSection";
+// import CarouselSection from "./CarouselSection";
 import ButtonSection from "./ButtonSection";
 
 const TopSection = (props) => {

@@ -50,7 +50,7 @@ const buttonList = [
   },
 ];
 
-const ButtonSection = ({ searchList, setSearchList }) => {
+const ButtonSection = ({ darkMode, searchList, setSearchList }) => {
   const toggleSearch = (name) => {
     if (searchList && searchList.includes(name)) {
       const newList = arrayRemove(searchList, name);
@@ -70,7 +70,11 @@ const ButtonSection = ({ searchList, setSearchList }) => {
               title={ele.styleName}
               onClick={() => toggleSearch(ele.styleName)}
               className={
-                ButtonStyles({ color: ele.styleName, list: searchList }).root
+                ButtonStyles({
+                  color: ele.styleName,
+                  list: searchList,
+                  dark: darkMode,
+                }).root
               }
             >
               <FontAwesomeIcon icon={ele.icon} />

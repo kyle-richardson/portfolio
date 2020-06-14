@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Proj from "./Proj";
 import { projects } from "../../data";
 
-const ProjList = ({ searchList }) => {
+const ProjList = ({ darkMode, searchList }) => {
   const [projectList, setProjectList] = useState(projects);
 
   useEffect(() => {
@@ -25,7 +25,8 @@ const ProjList = ({ searchList }) => {
             <Proj
               key={proj.name}
               {...proj}
-              type={id % 2 === 0 ? "odd-styles" : "even-styles"}
+              darkMode={darkMode}
+              type={id % 2 === 0 ? "odd" : "even"}
             />
           );
         })}

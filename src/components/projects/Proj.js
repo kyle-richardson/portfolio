@@ -1,24 +1,50 @@
 import React from "react";
 
-import LanguageIcon from "@material-ui/icons/Language";
 import CodeIcon from "@material-ui/icons/Code";
 import { InlineIcon } from "@iconify/react";
 import githubIcon from "@iconify/icons-bytesize/github";
 import zeitIcon from "@iconify/icons-simple-icons/zeit";
 import netlifyIcon from "@iconify/icons-cib/netlify";
+import ShortTextIcon from "@material-ui/icons/ShortText";
 
 import RenderTool from "./RenderTool";
 
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles((theme) => ({
+  backdrop: {
+    zIndex: theme.zIndex.drawer + 1,
+    color: "#fff",
+  },
+  root: {
+    paddingBottom: "10px",
+    paddingTop: "10px",
+    display: "flex",
+    flexDirection: "column",
+  },
+  even: {
+    backgroundColor: (dark) => (dark ? "#282c34" : "white"),
+  },
+  odd: {
+    backgroundColor: (dark) => (dark ? "#69868c" : "#a6d5df"),
+  },
+}));
+
 const Proj = (props) => {
+  const classes = useStyles();
+  const [open, setOpen] = React.useState(false);
+  const handleToggle = () => {
+    setOpen(!open);
+  };
   return (
-    <div className={props.type}>
+    <div className={`${classes.root} ${useStyles(props.darkMode)[props.type]}`}>
       <div className="proj-title">
         <div
-          title="Visit Site"
+          title="Show desscription"
           style={{ cursor: "pointer" }}
-          onClick={() => window.open(props.url, "_blank")}
+          onClick={handleToggle}
         >
-          <LanguageIcon fontSize="large" />
+          <ShortTextIcon fontSize="large" />
         </div>
         <h3>{props.name}</h3>
         <div
@@ -30,10 +56,24 @@ const Proj = (props) => {
         </div>
       </div>
 
-      <a title="Visit Site" href={props.url} target={props.url} rel="noopener">
-        <img className="image" src={props.image} alt={props.name} />
-      </a>
-      <br />
+      <div className="image">
+        <a
+          title="Visit Site"
+          href={props.url}
+          target={props.url}
+          rel="noopener"
+        >
+          <img
+            style={open ? { opacity: ".3", width: "100%" } : { width: "100%" }}
+            src={props.image}
+            alt={props.name}
+          />
+        </a>
+        <div className={`overlay-text ${open ? "show" : "hidden"}`}>
+          {props.description}
+        </div>
+      </div>
+
       <div style={{ padding: "10px 0" }}>
         {!!props.tools && (
           <span className="icons-container">
@@ -52,7 +92,6 @@ const Proj = (props) => {
                       ? zeitIcon
                       : null
                   }
-                  color="white"
                   width="1.8em"
                 />
               </span>
@@ -62,14 +101,14 @@ const Proj = (props) => {
       </div>
       <br />
       {!!props.libraries && (
-        <>
+        <div style={{ width: "100%" }}>
           <span>Libraries: </span>
           {props.libraries.map((lib, ind) => (
             <span key={lib}>
               {ind !== props.libraries.length - 1 ? `${lib}, ` : `${lib}`}
             </span>
           ))}
-        </>
+        </div>
       )}
       {props.notes && <p>Notes: {props.notes}</p>}
     </div>
