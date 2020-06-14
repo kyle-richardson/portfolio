@@ -6,7 +6,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 const MenuModal = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
-  const handleClick = event => {
+  const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
 
@@ -15,8 +15,10 @@ const MenuModal = () => {
   };
   return (
     <div className="menu-modal">
-      <div onClick={handleClick} style={{ cursor: "pointer" }}>
-        <MenuIcon fontSize="large" />
+      <div>
+        <div onClick={handleClick} style={{ cursor: "pointer" }}>
+          <MenuIcon fontSize="large" />
+        </div>
       </div>
       <Menu
         id="simple-menu"
