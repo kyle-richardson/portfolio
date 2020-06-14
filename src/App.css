@@ -145,11 +145,12 @@ span {
 
 .overlay-text {
   position: relative;
-  /* bottom: 20%;
-  right: 50%; */
-  top: -30vh;
+  top: -45vh;
+  left: 7vw;
   opacity: 1;
-  /* z-index: 5; */
+  padding: 20px;
+  width: 35vw;
+  align-self: center;
 }
 
 .show-overlay {

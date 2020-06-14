@@ -1,7 +1,7 @@
 export const projects = [
   {
     name: "Digital Resume",
-    description: "test",
+    description: "Easy-to-read digital resume that utilizes only html and css",
     url: "https://www.kylerichardson.tech",
     github: "https://github.com/kyle-richardson/kyle-richardson.github.io",
     image: `${process.env.PUBLIC_URL}/assets/images/resume.png`,
@@ -11,7 +11,8 @@ export const projects = [
   },
   {
     name: "Todo List",
-    description: "testTodo",
+    description:
+      "One of my first projects.  Utilizes local storage instead of a database to save content on refresh. Uses class-based react components.",
     url: "https://kyle-todo.netlify.com",
     github: "https://github.com/kyle-richardson/React-Todo/",
     image: `${process.env.PUBLIC_URL}/assets/images/to-do.png`,
@@ -21,7 +22,8 @@ export const projects = [
   },
   {
     name: "Calculator",
-    description: "test",
+    description:
+      "Fully functional simple calculator with history log.  Uses class-based react components.",
     url: "https://kyle-lambda-calculator.netlify.com",
     github: "https://github.com/kyle-richardson/lambda-calculator",
     image: `${process.env.PUBLIC_URL}/assets/images/calculator.png`,
@@ -31,7 +33,8 @@ export const projects = [
   },
   {
     name: "Github Network",
-    description: "test",
+    description:
+      "Simple way to search github by username and see their followers and contribution graph. Uses class-based react components.",
     url: "https://kyle-github-network.netlify.com",
     github: "https://github.com/kyle-richardson/React-Github-User-Card",
     image: `${process.env.PUBLIC_URL}/assets/images/github.png`,
@@ -42,7 +45,8 @@ export const projects = [
 
   {
     name: "Nasa POTD",
-    description: "test",
+    description:
+      "References NASA photo of the day API to show today's incredible photo along with a description. Uses functional react components",
     url: "https://kyle-nasa-potd.netlify.com",
     github: "https://github.com/kyle-richardson/nasa-photo-of-the-day",
     image: `${process.env.PUBLIC_URL}/assets/images/nasa.jpg`,
@@ -52,7 +56,8 @@ export const projects = [
   },
   {
     name: "Weightlifting Journal",
-    description: "test",
+    description:
+      "Record your workout sessions with a simple and elegant design. Uses fully functional back end API which I helped build.",
     url: "https://weightlifting-journal.netlify.com/register",
     github: "https://github.com/BW-WeightLiftingJournal",
     image: `${process.env.PUBLIC_URL}/assets/images/weightlifting.png`,
@@ -63,7 +68,8 @@ export const projects = [
   },
   {
     name: "Dad Jokes",
-    description: "test",
+    description:
+      "Create, view, and share your favorite dad jokes. Uses fully functional back end API which I helped build.",
     url: "https://front-end-1e5w5oznv.now.sh/",
     github: "https://github.com/Build-Week-PT-Dad-Jokes",
     image: `${process.env.PUBLIC_URL}/assets/images/dadjokes.png`,
