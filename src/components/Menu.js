@@ -138,7 +138,7 @@ const Menu = ({ darkMode, setDarkMode }) => {
         </div>
         <Divider />
         <List>
-          <ListItem button>
+          <ListItem button onClick={() => (window.location.href = "#read-me")}>
             <ListItemText
               primary={"About Me"}
               primaryTypographyProps={{ variant: "h6" }}

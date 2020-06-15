@@ -43,11 +43,11 @@ const buttonList = [
     styleName: "node-js",
     icon: faNodeJs,
   },
-  {
-    text: "PYTHON",
-    styleName: "python",
-    icon: faPython,
-  },
+  // {
+  //   text: "PYTHON",
+  //   styleName: "python",
+  //   icon: faPython,
+  // },
 ];
 
 const ButtonSection = ({ darkMode, searchList, setSearchList }) => {
@@ -62,7 +62,7 @@ const ButtonSection = ({ darkMode, searchList, setSearchList }) => {
   const arrayRemove = (arr, value) => arr.filter((ele) => ele !== value);
   return (
     <div id="projects">
-      <p>Filter projects by:</p>
+      <h4>Projects</h4>
       <div className="button-container">
         {buttonList.map((ele) => {
           return (

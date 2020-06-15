@@ -42,7 +42,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Proj = (props) => {
-  const [marginChange, setMarginChange] = useState(0);
+  const [
+    marginChange,
+    // setMarginChange
+  ] = useState(0);
   const classes = useStyles();
   const [open, setOpen] = useState(false);
   const handleToggle = () => {
