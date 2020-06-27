@@ -7,6 +7,8 @@ import zeitIcon from "@iconify/icons-simple-icons/zeit";
 import netlifyIcon from "@iconify/icons-cib/netlify";
 import ShortTextIcon from "@material-ui/icons/ShortText";
 import Typography from "@material-ui/core/Typography";
+import Fade from "@material-ui/core/Fade";
+import Paper from "@material-ui/core/Paper";
 
 import RenderTool from "./RenderTool";
 
@@ -32,12 +34,16 @@ const useStyles = makeStyles((theme) => ({
   overlay: {
     display: (props) => (props.open ? "block" : "none"),
     backgroundColor: (props) => (props.dark ? "gray" : "lightgray"),
-    position: "relative",
-    top: "-45vh",
-    left: "7vw",
-    opacity: "1",
+    position: "absolute",
+    top: "20%",
+    left: "5%",
+    opacity: (props) => (props.open ? "1" : "0"),
     padding: "20px",
-    width: "35vw",
+    width: "90%",
+    borderRadius: "8px",
+    zIndex: "1000",
+    transition: "opacity 1s ease",
+    cursor: "pointer",
   },
 }));
 
@@ -87,11 +93,18 @@ const Proj = (props) => {
             alt={props.name}
           />
         </a>
-        <div
-          className={useStyles({ dark: props.darkMode, open: open }).overlay}
-        >
-          <Typography variant="h5">{props.description}</Typography>
-        </div>
+        <Fade in={open} timeout={500}>
+          <Paper>
+            <div
+              className={
+                useStyles({ dark: props.darkMode, open: open }).overlay
+              }
+              onClick={handleToggle}
+            >
+              <Typography variant="h5">{props.description}</Typography>
+            </div>
+          </Paper>
+        </Fade>
       </div>
 
       <div
