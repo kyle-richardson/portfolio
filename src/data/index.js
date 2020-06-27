@@ -64,7 +64,7 @@ export const projects = [
     tools: ["html5", "css3", "less", "js", "react", "node-js"],
     libraries: ["Material UI", "Redux"],
     deployed: "netlify",
-    notes: "Built as small team",
+    notes: "Built with small team in 2 weeks",
   },
   {
     name: "Dad Jokes",
@@ -76,6 +76,25 @@ export const projects = [
     tools: ["html5", "css3", "less", "js", "react", "node-js"],
     libraries: ["Material UI", "Redux"],
     deployed: "zeit",
-    notes: "Built as small team",
+    notes: "Built with small team in 2 weeks",
+  },
+  {
+    name: "Neighborhood Chef",
+    description:
+      "Social media event creation app to help get to know your neighbors while sharing in good eatin'.",
+    url: "https://ourneighborhoodchef.com",
+    github: "https://github.com/Lambda-School-Labs/neighborhood-chef-fe",
+    image: `${process.env.PUBLIC_URL}/assets/images/chef.png`,
+    tools: ["html5", "css3", "less", "js", "react", "node-js"],
+    libraries: [
+      "Material UI",
+      "Redux",
+      "GraphQL",
+      "Okta API",
+      "Mapbox API",
+      "Iconify",
+    ],
+    deployed: "aws",
+    notes: "Built with small team in 3 months",
   },
 ];

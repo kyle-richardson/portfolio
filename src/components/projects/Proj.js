@@ -5,6 +5,7 @@ import { InlineIcon } from "@iconify/react";
 import githubIcon from "@iconify/icons-bytesize/github";
 import zeitIcon from "@iconify/icons-simple-icons/zeit";
 import netlifyIcon from "@iconify/icons-cib/netlify";
+import amazonawsIcon from "@iconify/icons-simple-icons/amazonaws";
 import ShortTextIcon from "@material-ui/icons/ShortText";
 import Typography from "@material-ui/core/Typography";
 import Fade from "@material-ui/core/Fade";
@@ -89,7 +90,11 @@ const Proj = (props) => {
           rel="noopener"
         >
           <img
-            style={open ? { opacity: ".3", width: "100%" } : { width: "100%" }}
+            style={
+              open
+                ? { opacity: ".3", width: "100%", borderRadius: "8px" }
+                : { width: "100%", borderRadius: "8px" }
+            }
             src={props.image}
             alt={props.name}
           />
@@ -129,6 +134,8 @@ const Proj = (props) => {
                       ? netlifyIcon
                       : props.deployed === "zeit"
                       ? zeitIcon
+                      : props.deployed === "aws"
+                      ? amazonawsIcon
                       : null
                   }
                   width="1.8em"
