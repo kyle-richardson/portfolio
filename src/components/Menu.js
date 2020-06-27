@@ -28,7 +28,8 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
   },
   appBar: {
-    backgroundColor: "#282c34",
+    backgroundColor: (dark) =>
+      dark ? "rgba(40,44,52,.9)" : "rgba(166,213,223,.9)",
     transition: theme.transitions.create(["margin", "width"], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -102,7 +103,7 @@ const Menu = ({ darkMode, setDarkMode }) => {
       <CssBaseline />
       <AppBar
         position="fixed"
-        className={clsx(classes.appBar, {
+        className={clsx(useStyles(darkMode).appBar, {
           [classes.appBarShift]: open,
         })}
       >
