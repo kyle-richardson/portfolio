@@ -44,6 +44,7 @@ const useStyles = makeStyles((theme) => ({
     zIndex: "1000",
     transition: "opacity 1s ease",
     cursor: "pointer",
+    color: (props) => (props.dark ? "white" : "black"),
   },
 }));
 
