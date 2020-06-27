@@ -89,7 +89,11 @@ const Proj = (props) => {
           rel="noopener"
         >
           <img
-            style={open ? { opacity: ".3", width: "100%" } : { width: "100%" }}
+            style={
+              open
+                ? { opacity: ".3", width: "100%", borderRadius: "8px" }
+                : { width: "100%", borderRadius: "8px" }
+            }
             src={props.image}
             alt={props.name}
           />
