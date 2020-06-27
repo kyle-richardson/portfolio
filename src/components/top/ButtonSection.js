@@ -6,7 +6,7 @@ import {
   faCss3,
   faHtml5,
   faNodeJs,
-  faPython,
+  // faPython,
   faLess,
   faJs,
 } from "@fortawesome/free-brands-svg-icons";
@@ -67,6 +67,7 @@ const ButtonSection = ({ darkMode, searchList, setSearchList }) => {
         {buttonList.map((ele) => {
           return (
             <Button
+              key={ele.styleName}
               title={ele.styleName}
               onClick={() => toggleSearch(ele.styleName)}
               className={

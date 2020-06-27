@@ -9,7 +9,7 @@ export const useDarkMode = () => {
     const appHeader = document.getElementById("App-header");
     const footer = document.querySelector(".footer-container");
     const anchor = document.querySelectorAll("a");
-    const readMe = document.querySelector(".read-me-container");
+    // const readMe = document.querySelector(".read-me-container");
     // const overlay = document.querySelector(".overlay-text");
     if (useDark) {
       app.classList.add("dark-mode");
