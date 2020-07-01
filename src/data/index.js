@@ -2,7 +2,7 @@ export const projects = [
   {
     name: "Digital Resume",
     description: "Easy-to-read digital resume that utilizes only html and css",
-    url: "https://www.kylerichardson.tech",
+    url: "https://resume.kylerichardson.tech",
     github: "https://github.com/kyle-richardson/kyle-richardson.github.io",
     image: `${process.env.PUBLIC_URL}/assets/images/resume.png`,
     tools: ["html5", "css3", "less"],
