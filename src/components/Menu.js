@@ -148,7 +148,7 @@ const Menu = ({ darkMode, setDarkMode }) => {
           <ListItem
             button
             onClick={() =>
-              window.open("https://www.kylerichardson.tech", "_blank")
+              window.open("https://resume.kylerichardson.tech", "_blank")
             }
           >
             <ListItemText
