@@ -61,7 +61,7 @@ export const projects = [
     description:
       "Quick and simple app to calculate exchange rates from USD to any currency in the world",
     url: "https://kyle-currency.netlify.app/",
-    github: "https://github.com/kyle-richardson/React-Redux-App",
+    github: "https://github.com/kyle-richardson/currency-exchange",
     image: `${process.env.PUBLIC_URL}/assets/images/currency.png`,
     tools: ["html5", "css3", "js", "react"],
     libraries: ["Redux", "OpenExchange API", "Rest Countries API"],
