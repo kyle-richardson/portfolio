@@ -20,10 +20,9 @@ import CollectionsIcon from "@material-ui/icons/Collections";
 import PortraitIcon from "@material-ui/icons/Portrait";
 import ReceiptIcon from "@material-ui/icons/Receipt";
 import DescriptionIcon from "@material-ui/icons/Description";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import EmailIcon from "@material-ui/icons/Email";
 
 const drawerWidth = 200;
 
@@ -203,7 +202,7 @@ const Menu = ({ darkMode, setDarkMode }) => {
             }
           >
             <ListItemIcon style={{ color: "inherit" }}>
-              <FontAwesomeIcon icon={faEnvelope} size="2x" />
+              <EmailIcon fontSize="large" />
             </ListItemIcon>
             <ListItemText
               primary={"Email"}
@@ -217,7 +216,7 @@ const Menu = ({ darkMode, setDarkMode }) => {
             }
           >
             <ListItemIcon style={{ color: "inherit" }}>
-              <FontAwesomeIcon icon={faGithub} size="2x" />
+              <GitHubIcon fontSize="large" />
             </ListItemIcon>
             <ListItemText
               primary={"Github"}
@@ -231,7 +230,7 @@ const Menu = ({ darkMode, setDarkMode }) => {
             }
           >
             <ListItemIcon style={{ color: "inherit" }}>
-              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+              <LinkedInIcon fontSize="large" />
             </ListItemIcon>
             <ListItemText
               primary={"Linked In"}
