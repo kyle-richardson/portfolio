@@ -15,12 +15,17 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import Brightness3Icon from "@material-ui/icons/Brightness3";
 import Brightness7Icon from "@material-ui/icons/Brightness7";
+import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
+import CollectionsIcon from "@material-ui/icons/Collections";
+import PortraitIcon from "@material-ui/icons/Portrait";
+import ReceiptIcon from "@material-ui/icons/Receipt";
+import DescriptionIcon from "@material-ui/icons/Description";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-const drawerWidth = 160;
+const drawerWidth = 200;
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -140,6 +145,9 @@ const Menu = ({ darkMode, setDarkMode }) => {
         <Divider />
         <List>
           <ListItem button onClick={() => (window.location.href = "#read-me")}>
+            <ListItemIcon style={{ color: "inherit" }}>
+              <PortraitIcon fontSize="large" />
+            </ListItemIcon>
             <ListItemText
               primary={"About Me"}
               primaryTypographyProps={{ variant: "h6" }}
@@ -151,6 +159,9 @@ const Menu = ({ darkMode, setDarkMode }) => {
               window.open("https://resume.kylerichardson.tech", "_blank")
             }
           >
+            <ListItemIcon style={{ color: "inherit" }}>
+              <DescriptionIcon fontSize="large" />
+            </ListItemIcon>
             <ListItemText
               primary={"Digital Resume"}
               primaryTypographyProps={{ variant: "h6" }}
@@ -165,12 +176,18 @@ const Menu = ({ darkMode, setDarkMode }) => {
               )
             }
           >
+            <ListItemIcon style={{ color: "inherit" }}>
+              <ReceiptIcon fontSize="large" />
+            </ListItemIcon>
             <ListItemText
               primary={"Printable Resume"}
               primaryTypographyProps={{ variant: "h6" }}
             />
           </ListItem>
           <ListItem button onClick={() => (window.location.href = "#projects")}>
+            <ListItemIcon style={{ color: "inherit" }}>
+              <CollectionsIcon fontSize="large" />
+            </ListItemIcon>
             <ListItemText
               primary={"Projects"}
               primaryTypographyProps={{ variant: "h6" }}
@@ -241,6 +258,9 @@ const Menu = ({ darkMode, setDarkMode }) => {
             button
             onClick={() => (window.location.href = "#App-header")}
           >
+            <ListItemIcon style={{ color: "inherit" }}>
+              <ArrowUpwardIcon fontSize="large" />
+            </ListItemIcon>
             <ListItemText
               primary={"Go To Top"}
               primaryTypographyProps={{ variant: "h6" }}
