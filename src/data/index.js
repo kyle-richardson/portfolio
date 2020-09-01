@@ -1,10 +1,21 @@
+import gameOfLife from "../assets/game-of-life.png"
+import calculator from "../assets/calculator.png"
+import currency from "../assets/currency.png"
+import dadjokes from "../assets/dadjokes.png"
+import github from "../assets/github.png"
+import nasa from "../assets/nasa.jpg"
+import resume from "../assets/resume.png"
+import toDo from "../assets/to-do.png"
+import weightlifting from "../assets/weightlifting.png"
+import chef from "../assets/chef.png"
+
 export const projects = [
   {
     name: "Digital Resume",
     description: "Easy-to-read digital resume that utilizes only html and css",
     url: "https://resume.kylerichardson.tech",
     github: "https://github.com/kyle-richardson/kyle-richardson.github.io",
-    image: `${process.env.PUBLIC_URL}/assets/images/resume.png`,
+    image: resume,
     tools: ["html5", "css3", "less"],
     deployed: "github pages",
     notes: "",
@@ -15,7 +26,7 @@ export const projects = [
       "One of my first projects.  Utilizes local storage instead of a database to save content on refresh. Uses class-based react components.",
     url: "https://kyle-todo.netlify.com",
     github: "https://github.com/kyle-richardson/React-Todo/",
-    image: `${process.env.PUBLIC_URL}/assets/images/to-do.png`,
+    image: toDo,
     tools: ["html5", "css3", "js", "react"],
     deployed: "netlify",
     notes: "",
@@ -26,7 +37,7 @@ export const projects = [
       "Fully functional simple calculator with history log.  Uses class-based react components.",
     url: "https://kyle-lambda-calculator.netlify.com",
     github: "https://github.com/kyle-richardson/lambda-calculator",
-    image: `${process.env.PUBLIC_URL}/assets/images/calculator.png`,
+    image: calculator,
     tools: ["html5", "css3", "js", "react"],
     deployed: "netlify",
     notes: "",
@@ -37,7 +48,7 @@ export const projects = [
       "Simple way to search github by username and see their followers and contribution graph. Uses class-based react components.",
     url: "https://kyle-github-network.netlify.com",
     github: "https://github.com/kyle-richardson/React-Github-User-Card",
-    image: `${process.env.PUBLIC_URL}/assets/images/github.png`,
+    image: github,
     tools: ["html5", "css3", "js", "react"],
     libraries: ["Github API"],
     deployed: "netlify",
@@ -50,7 +61,7 @@ export const projects = [
       "References NASA photo of the day API to show today's incredible photo along with a description. Uses functional react components",
     url: "https://kyle-nasa-potd.netlify.com",
     github: "https://github.com/kyle-richardson/nasa-photo-of-the-day",
-    image: `${process.env.PUBLIC_URL}/assets/images/nasa.jpg`,
+    image: nasa,
     tools: ["html5", "css3", "js", "react"],
     libraries: ["styled components", "NASA POTD API"],
     deployed: "netlify",
@@ -62,9 +73,21 @@ export const projects = [
       "Quick and simple app to calculate exchange rates from USD to any currency in the world",
     url: "https://kyle-currency.netlify.app/",
     github: "https://github.com/kyle-richardson/currency-exchange",
-    image: `${process.env.PUBLIC_URL}/assets/images/currency.png`,
+    image: currency,
     tools: ["html5", "css3", "js", "react"],
     libraries: ["Redux", "OpenExchange API", "Rest Countries API"],
+    deployed: "netlify",
+    notes: "",
+  },
+  {
+    name: "Conway's Game of Life",
+    description:
+      "My interpretation of James Conway's classic 1970 cellular automation algorithm.",
+    url: "https://game-of-life-kyle.netlify.app/",
+    github: "https://github.com/kyle-richardson/game-of-life",
+    image: gameOfLife,
+    tools: ["html5", "css3", "js", "react"],
+    libraries: ["Material UI"],
     deployed: "netlify",
     notes: "",
   },
@@ -75,7 +98,7 @@ export const projects = [
       "Record your workout sessions with a simple and elegant design. Uses fully functional back end API which I helped build.",
     url: "https://weightlifting-journal.netlify.com/register",
     github: "https://github.com/BW-WeightLiftingJournal",
-    image: `${process.env.PUBLIC_URL}/assets/images/weightlifting.png`,
+    image: weightlifting,
     tools: ["html5", "css3", "less", "js", "react", "node-js"],
     libraries: ["Material UI", "Redux"],
     deployed: "netlify",
@@ -87,7 +110,7 @@ export const projects = [
       "Create, view, and share your favorite dad jokes. Uses fully functional back end API which I helped build.",
     url: "https://front-end-1e5w5oznv.now.sh/",
     github: "https://github.com/Build-Week-PT-Dad-Jokes",
-    image: `${process.env.PUBLIC_URL}/assets/images/dadjokes.png`,
+    image: dadjokes,
     tools: ["html5", "css3", "less", "js", "react", "node-js"],
     libraries: ["Material UI", "Redux"],
     deployed: "zeit",
@@ -99,7 +122,7 @@ export const projects = [
       "Social media event creation app to help get to know your neighbors while sharing in good eatin'.",
     url: "https://ourneighborhoodchef.com",
     github: "https://github.com/Lambda-School-Labs/neighborhood-chef-fe",
-    image: `${process.env.PUBLIC_URL}/assets/images/chef.png`,
+    image: chef,
     tools: ["html5", "css3", "less", "js", "react", "node-js"],
     libraries: [
       "Material UI",
