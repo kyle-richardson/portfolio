@@ -120,8 +120,8 @@ export const projects = [
     name: "Neighborhood Chef",
     description:
       "Social media event creation app to help get to know your neighbors while sharing in good eatin'.",
-    url: "https://ourneighborhoodchef.com",
-    github: "https://github.com/Lambda-School-Labs/neighborhood-chef-fe",
+    url: "https://neighborhood-chef.netlify.app",
+    github: "https://github.com/kyle-richardson/neighborhood-chef-fe",
     image: chef,
     tools: ["html5", "css3", "less", "js", "react", "node-js"],
     libraries: [
