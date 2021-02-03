@@ -8,6 +8,7 @@ import resume from "../assets/resume.png"
 import toDo from "../assets/to-do.png"
 import weightlifting from "../assets/weightlifting.png"
 import chef from "../assets/chef.png"
+import covid from "../assets/covid.png"
 
 export const projects = [
   {
@@ -18,6 +19,18 @@ export const projects = [
     image: resume,
     tools: ["html5", "css3", "less"],
     deployed: "github pages",
+    notes: "",
+  },
+  {
+    name: "COVID-19 County Info",
+    description:
+      "Built to resolve a problem: I could not find county info for my area.",
+    url: "https://covid.kylerichardson.tech",
+    github: "https://github.com/kyle-richardson/covid-info-for-me/",
+    image: covid,
+    tools: ["html5", "css3", "js", "react"],
+    libraries: ["Evergreen UI", "Disease.sh API"],
+    deployed: "netlify",
     notes: "",
   },
   {
