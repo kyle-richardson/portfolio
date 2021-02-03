@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: "10px",
     display: "flex",
     flexDirection: "column",
+    // flexWrap: "wrap"
   },
   even: {
     backgroundColor: (dark) => (dark ? "#282c34" : "white"),
@@ -63,7 +64,7 @@ const Proj = (props) => {
     // setMarginChange(document.querySelector(".overlay-text").clientHeight);
   }, []);
   return (
-    <div className={`${classes.root} ${useStyles(props.darkMode)[props.type]}`}>
+    <div className={`single-project-container ${classes.root} ${useStyles(props.darkMode)[props.type]}`}>
       <div className="proj-title">
         <div
           title="Show desscription"
