@@ -9,17 +9,37 @@ import toDo from "../assets/to-do.png"
 import weightlifting from "../assets/weightlifting.png"
 import chef from "../assets/chef.png"
 import covid from "../assets/covid.png"
+import doreminisce from "../assets/doreminisce.png"
 
 export const projects = [
+  // {
+  //   name: "Digital Resume",
+  //   description: "Easy-to-read digital resume that utilizes only html and css",
+  //   url: "https://resume.kylerichardson.tech",
+  //   github: "https://github.com/kyle-richardson/kyle-richardson.github.io",
+  //   image: resume,
+  //   tools: ["html5", "css3", "less"],
+  //   deployed: "github pages",
+  //   notes: "",
+  // },
   {
-    name: "Digital Resume",
-    description: "Easy-to-read digital resume that utilizes only html and css",
-    url: "https://resume.kylerichardson.tech",
-    github: "https://github.com/kyle-richardson/kyle-richardson.github.io",
-    image: resume,
-    tools: ["html5", "css3", "less"],
-    deployed: "github pages",
-    notes: "",
+    name: "Do-Re-Minisce",
+    description:
+      "Reminisce in the music of the past.  Find the Billboard top 100 for any date since 1950, and create a Spotify playlist to enjoy.",
+    url: "https://doreminisce.kylerichardson.tech",
+    github: "https://github.com/kyle-richardson/doreminisce",
+    image: doreminisce,
+    tools: ["html5", "css3", "js", "react", "node-js"],
+    libraries: [
+      "Material UI",
+      "Express",
+      "Spotify API",
+      "OAuth 2.0",
+      "Billboard-top-100 API",
+      "React Icons",
+    ],
+    deployed: "netlify",
+    notes: ""
   },
   {
     name: "COVID-19 County Info",
@@ -33,25 +53,37 @@ export const projects = [
     deployed: "netlify",
     notes: "",
   },
+  // {
+  //   name: "Todo List",
+  //   description:
+  //     "One of my first projects.  Utilizes local storage instead of a database to save content on refresh. Uses class-based react components.",
+  //   url: "https://kyle-todo.netlify.com",
+  //   github: "https://github.com/kyle-richardson/React-Todo/",
+  //   image: toDo,
+  //   tools: ["html5", "css3", "js", "react"],
+  //   deployed: "netlify",
+  //   notes: "",
+  // },
+  // {
+  //   name: "Calculator",
+  //   description:
+  //     "Fully functional simple calculator with history log.  Uses class-based react components.",
+  //   url: "https://kyle-lambda-calculator.netlify.com",
+  //   github: "https://github.com/kyle-richardson/lambda-calculator",
+  //   image: calculator,
+  //   tools: ["html5", "css3", "js", "react"],
+  //   deployed: "netlify",
+  //   notes: "",
+  // },
   {
-    name: "Todo List",
+    name: "Currency Exchange Rate",
     description:
-      "One of my first projects.  Utilizes local storage instead of a database to save content on refresh. Uses class-based react components.",
-    url: "https://kyle-todo.netlify.com",
-    github: "https://github.com/kyle-richardson/React-Todo/",
-    image: toDo,
+      "Quick and simple app to calculate exchange rates from USD to any currency in the world",
+    url: "https://kyle-currency.netlify.app/",
+    github: "https://github.com/kyle-richardson/currency-exchange",
+    image: currency,
     tools: ["html5", "css3", "js", "react"],
-    deployed: "netlify",
-    notes: "",
-  },
-  {
-    name: "Calculator",
-    description:
-      "Fully functional simple calculator with history log.  Uses class-based react components.",
-    url: "https://kyle-lambda-calculator.netlify.com",
-    github: "https://github.com/kyle-richardson/lambda-calculator",
-    image: calculator,
-    tools: ["html5", "css3", "js", "react"],
+    libraries: ["Redux", "OpenExchange API", "Rest Countries API"],
     deployed: "netlify",
     notes: "",
   },
@@ -80,18 +112,7 @@ export const projects = [
     deployed: "netlify",
     notes: "",
   },
-  {
-    name: "Currency Exchange Rate",
-    description:
-      "Quick and simple app to calculate exchange rates from USD to any currency in the world",
-    url: "https://kyle-currency.netlify.app/",
-    github: "https://github.com/kyle-richardson/currency-exchange",
-    image: currency,
-    tools: ["html5", "css3", "js", "react"],
-    libraries: ["Redux", "OpenExchange API", "Rest Countries API"],
-    deployed: "netlify",
-    notes: "",
-  },
+
   {
     name: "Conway's Game of Life",
     description:
@@ -117,18 +138,18 @@ export const projects = [
     deployed: "netlify",
     notes: "Built with small team in 2 weeks",
   },
-  {
-    name: "Dad Jokes",
-    description:
-      "Create, view, and share your favorite dad jokes. Uses fully functional back end API which I helped build.",
-    url: "https://front-end-1e5w5oznv.now.sh/",
-    github: "https://github.com/Build-Week-PT-Dad-Jokes",
-    image: dadjokes,
-    tools: ["html5", "css3", "less", "js", "react", "node-js"],
-    libraries: ["Material UI", "Redux"],
-    deployed: "zeit",
-    notes: "Built with small team in 2 weeks",
-  },
+  // {
+  //   name: "Dad Jokes",
+  //   description:
+  //     "Create, view, and share your favorite dad jokes. Uses fully functional back end API which I helped build.",
+  //   url: "https://front-end-1e5w5oznv.now.sh/",
+  //   github: "https://github.com/Build-Week-PT-Dad-Jokes",
+  //   image: dadjokes,
+  //   tools: ["html5", "css3", "less", "js", "react", "node-js"],
+  //   libraries: ["Material UI", "Redux"],
+  //   deployed: "zeit",
+  //   notes: "Built with small team in 2 weeks",
+  // },
   {
     name: "Neighborhood Chef",
     description:
