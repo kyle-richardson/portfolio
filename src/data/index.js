@@ -129,14 +129,14 @@ export const projects = [
   {
     name: "Weightlifting Journal",
     description:
-      "Record your workout sessions with a simple and elegant design. Uses fully functional back end API which I helped build.",
-    url: "https://weightlifting-journal.netlify.com/register",
-    github: "https://github.com/BW-WeightLiftingJournal",
+      "Record your workout sessions with a simple and elegant design. Uses fully functional back end API.",
+    url: "https://liftjournal.netlify.app",
+    github: "https://github.com/kyle-richardson/weightlifting-journal",
     image: weightlifting,
     tools: ["html5", "css3", "less", "js", "react", "node-js"],
     libraries: ["Material UI", "Redux"],
     deployed: "netlify",
-    notes: "Built with small team in 2 weeks",
+    notes: "Built with small team in 2 weeks, maintained and updated by myself",
   },
   // {
   //   name: "Dad Jokes",
