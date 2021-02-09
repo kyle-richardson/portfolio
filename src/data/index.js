@@ -42,18 +42,6 @@ export const projects = [
     notes: ""
   },
   {
-    name: "COVID-19 County Info",
-    description:
-      "Built to resolve a problem: I could not find county info for my area.",
-    url: "https://covid.kylerichardson.tech",
-    github: "https://github.com/kyle-richardson/covid-info-for-me/",
-    image: covid,
-    tools: ["html5", "css3", "js", "react"],
-    libraries: ["Evergreen UI", "Disease.sh API"],
-    deployed: "netlify",
-    notes: "",
-  },
-  {
     name: "Weightlifting Journal",
     description:
       "Record your workout sessions with a simple and elegant design. Uses fully functional back end API.",
@@ -65,6 +53,19 @@ export const projects = [
     deployed: "netlify",
     notes: "Built with small team in 2 weeks, maintained and updated by myself",
   },
+  {
+    name: "COVID-19 County Info",
+    description:
+      "Built to resolve a problem: I could not find county info for my area.",
+    url: "https://covid.kylerichardson.tech",
+    github: "https://github.com/kyle-richardson/covid-info-for-me/",
+    image: covid,
+    tools: ["html5", "css3", "js", "react"],
+    libraries: ["Evergreen UI", "Disease.sh API"],
+    deployed: "netlify",
+    notes: "",
+  },
+  
   // {
   //   name: "Todo List",
   //   description:
