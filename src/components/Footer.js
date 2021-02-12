@@ -29,7 +29,7 @@ const Footer = ({darkMode}) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faEnvelope} size="2x" />
+          <FontAwesomeIcon icon={faEnvelope} size="4x" />
         </a>
         <a
           className="github-icon"
@@ -37,7 +37,7 @@ const Footer = ({darkMode}) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faGithub} size="2x" />
+          <FontAwesomeIcon icon={faGithub} size="4x" />
         </a>
         <a
           className="linkedin-icon"
@@ -45,7 +45,7 @@ const Footer = ({darkMode}) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faLinkedin} size="2x" />
+          <FontAwesomeIcon icon={faLinkedin} size="4x" />
         </a>
       </div>
       <p>Made by Kyle Richardson</p>

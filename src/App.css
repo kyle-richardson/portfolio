@@ -126,6 +126,10 @@ span {
 	position: relative;
 }
 
+.image:hover {
+	opacity: 0.8;
+}
+
 .icon {
 	margin-right: 10px;
 }
