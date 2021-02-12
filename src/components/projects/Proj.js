@@ -134,7 +134,17 @@ const Proj = (props) => {
           </Paper>
         </Fade>
       </div>
-
+      {!!props.libraries && (
+        <div style={{ width: "100%" }}>
+          <span>Libraries: </span>
+          {props.libraries.map((lib, ind) => (
+            <span key={lib}>
+              {ind !== props.libraries.length - 1 ? `${lib}, ` : `${lib}`}
+            </span>
+          ))}
+        </div>
+      )}
+      {props.notes && <p>Notes: {props.notes}</p>}
       <div
         style={{
           marginTop: -marginChange,
@@ -167,18 +177,7 @@ const Proj = (props) => {
           </span>
         )}
       </div>
-      <br />
-      {!!props.libraries && (
-        <div style={{ width: "100%" }}>
-          <span>Libraries: </span>
-          {props.libraries.map((lib, ind) => (
-            <span key={lib}>
-              {ind !== props.libraries.length - 1 ? `${lib}, ` : `${lib}`}
-            </span>
-          ))}
-        </div>
-      )}
-      {props.notes && <p>Notes: {props.notes}</p>}
+      
     </div>
   );
 };

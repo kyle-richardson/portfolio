@@ -145,7 +145,7 @@ const Menu = ({ darkMode, setDarkMode }) => {
         </div>
         <Divider />
         <List>
-          <ListItem button onClick={() => (window.location.href = "#read-me")}>
+          <ListItem button onClick={() => (window.location.href = "#about-me")}>
             <ListItemIcon style={{ color: "inherit" }}>
               <PortraitIcon fontSize="large" />
             </ListItemIcon>
