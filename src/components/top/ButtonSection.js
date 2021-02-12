@@ -62,7 +62,7 @@ const ButtonSection = ({ darkMode, searchList, setSearchList }) => {
   const arrayRemove = (arr, value) => arr.filter((ele) => ele !== value);
   return (
     <div id="projects">
-      <h4>Projects</h4>
+      <h2>Projects</h2>
       <div className="button-container">
         {buttonList.map((ele) => {
           return (

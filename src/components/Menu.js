@@ -29,10 +29,11 @@ const drawerWidth = 200;
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
+    zIndex: 4
   },
   appBar: {
     backgroundColor: (dark) =>
-      dark ? "rgba(40,44,52,.9)" : "rgba(166,213,223,.9)",
+      dark ? "rgba(40,44,52,.9)" : "rgba(230,230,230, .9)",
     transition: theme.transitions.create(["margin", "width"], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -54,12 +55,13 @@ const useStyles = makeStyles((theme) => ({
     display: "none",
   },
   drawer: {
+    // opacity: .9,
     width: drawerWidth,
     flexShrink: 0,
   },
   drawerPaper: {
     width: drawerWidth,
-    background: (dark) => (dark ? "slategray" : "white"),
+    background: (dark) => (dark ? "#3d424d" : "white"),
     color: (dark) => (dark ? "white" : "#282c34"),
   },
   drawerHeader: {
@@ -152,7 +154,7 @@ const Menu = ({ darkMode, setDarkMode }) => {
               primaryTypographyProps={{ variant: "h6" }}
             />
           </ListItem>
-          <ListItem
+          {/* <ListItem
             button
             onClick={() =>
               window.open("https://resume.kylerichardson.tech", "_blank")
@@ -165,7 +167,7 @@ const Menu = ({ darkMode, setDarkMode }) => {
               primary={"Digital Resume"}
               primaryTypographyProps={{ variant: "h6" }}
             />
-          </ListItem>
+          </ListItem> */}
           <ListItem
             button
             onClick={() =>
@@ -179,7 +181,7 @@ const Menu = ({ darkMode, setDarkMode }) => {
               <ReceiptIcon fontSize="large" />
             </ListItemIcon>
             <ListItemText
-              primary={"Printable Resume"}
+              primary={"Resume"}
               primaryTypographyProps={{ variant: "h6" }}
             />
           </ListItem>

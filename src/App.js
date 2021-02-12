@@ -19,7 +19,7 @@ function App() {
         setSearchList={setSearchList}
       />
       <ProjList darkMode={darkMode} searchList={searchList} />
-      <Footer />
+      <Footer darkMode = {darkMode} />
     </div>
   );
 }
