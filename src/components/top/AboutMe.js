@@ -1,19 +1,22 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles} from "@material-ui/core/styles";
+import { useTheme } from '@material-ui/core/styles';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const useStyles = makeStyles({
   root: {
-    backgroundColor: (dark) => (dark ? "#69868c" : "#a6d5df"),
-    paddingTop: "10px",
-    paddingBottom: "20px",
-  },
+    backgroundColor: (dark) => (dark ? "#3d424d" : "rgb(230,230,230)"),
+    padding: "50px 0"
+  }
 });
 
 const AboutMe = (props) => {
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down('sm'));
   return (
-    <div id="read-me" className={useStyles(props.darkMode).root}>
-      <h4>About Me</h4>
-      <p style={{ padding: "0 30px" }}>
+    <div id="about-me" className={useStyles(props.darkMode).root}>
+      <h2 style={{padding: "0 0 15px 0"}}>About Me</h2>
+      <p style={{width: matches ? "95%" : "70%", margin: "0 auto"}}>
         I absolutely love computers, always have. The human body is a
         fascination to me as well, which led me to pursue Exercise Sciences at
         BYU and graduate with a bachelor's in that field. However, my career has

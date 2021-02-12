@@ -1,6 +1,21 @@
 import React, { useState, useEffect } from "react";
 import Proj from "./Proj";
 import { projects } from "../../data";
+import { makeStyles } from "@material-ui/core/styles";
+
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    paddingBottom: "30px",
+    paddingTop: "10px",
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    backgroundColor: (dark) => dark ? "#282c34" : "white",
+    // maxWidth: "80%",
+    margin: "0 auto"
+  }
+}))
 
 const ProjList = ({ darkMode, searchList }) => {
   const [projectList, setProjectList] = useState(projects);
@@ -18,7 +33,7 @@ const ProjList = ({ darkMode, searchList }) => {
   }, [searchList]);
 
   return (
-    <div>
+    <div className={useStyles(darkMode).root}>
       {projectList &&
         projectList.map((proj, id) => {
           return (

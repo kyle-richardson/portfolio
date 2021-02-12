@@ -21,23 +21,44 @@ const useStyles = makeStyles((theme) => ({
     color: "#fff",
   },
   root: {
-    paddingBottom: "10px",
-    paddingTop: "10px",
+    // paddingBottom: "10px",
+    // paddingTop: "10px",
     display: "flex",
     flexDirection: "column",
-    // flexWrap: "wrap"
+    // border: "1px solid black",
+    borderRadius: "8px",
+    width: "400px",
+    margin: "30px",
+    justifyContent: "space-between",
+    boxShadow: dark => dark ? "0px 0px 15px slategray" : "0px 0px 15px lightgray",
+    transition: 'all .3s ease-in-out',
+    '&:hover': {
+      boxShadow: dark => dark ? "0px 5px 23px slategray" : "0px 5px 23px lightgray",
+      transform: 'translate3d(0px, -1px, 0px)'
+    },
+    padding: "20px"
   },
-  even: {
-    backgroundColor: (dark) => (dark ? "#282c34" : "white"),
+  title: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "0 10px"
   },
-  odd: {
-    backgroundColor: (dark) => (dark ? "#69868c" : "#a6d5df"),
+  button: {
+    minWidth: "40px",
+    minHeight: "40px",
+    borderRadius: "50%",
+    cursor: "pointer",
+    paddingTop: "8px",
+    '&:hover': {
+      background: dark => dark ? "rgb(49, 53, 61)" : "rgb(238, 238, 238)"
+    }
   },
   overlay: {
     display: (props) => (props.open ? "block" : "none"),
-    backgroundColor: (props) => (props.dark ? "gray" : "lightgray"),
+    backgroundColor: (props) => (props.dark ? '#3d4149' : 'rgb(230,230,230)'),
     position: "absolute",
-    top: "20%",
+    top: "10%",
     left: "5%",
     opacity: (props) => (props.open ? "1" : "0"),
     padding: "20px",
@@ -64,11 +85,11 @@ const Proj = (props) => {
     // setMarginChange(document.querySelector(".overlay-text").clientHeight);
   }, []);
   return (
-    <div className={`single-project-container ${classes.root} ${useStyles(props.darkMode)[props.type]}`}>
-      <div className="proj-title">
+    <div className={`single-project-container ${useStyles(props.darkMode).root}`}>
+      <div className={classes.title}>
         <div
-          title="Show desscription"
-          style={{ cursor: "pointer" }}
+          title="Show description"
+          className={useStyles(props.darkMode).button}
           onClick={handleToggle}
         >
           <ShortTextIcon fontSize="large" />
@@ -76,7 +97,7 @@ const Proj = (props) => {
         <h3>{props.name}</h3>
         <div
           title="View Code"
-          style={{ cursor: "pointer" }}
+          className={useStyles(props.darkMode).button}
           onClick={() => window.open(props.github, "_blank")}
         >
           <CodeIcon fontSize="large" />
