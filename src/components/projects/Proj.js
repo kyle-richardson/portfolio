@@ -21,17 +21,17 @@ const useStyles = makeStyles((theme) => ({
     color: "#fff",
   },
   root: {
-    // paddingBottom: "10px",
-    // paddingTop: "10px",
     display: "flex",
     flexDirection: "column",
-    // border: "1px solid black",
     borderRadius: "8px",
     width: "400px",
     margin: "30px",
     justifyContent: "space-between",
     boxShadow: dark => dark ? "0px 0px 15px slategray" : "0px 0px 15px lightgray",
     transition: 'all .3s ease-in-out',
+    '& > *': {
+      flex: "1"
+    },
     '&:hover': {
       boxShadow: dark => dark ? "0px 5px 23px slategray" : "0px 5px 23px lightgray",
       transform: 'translate3d(0px, -1px, 0px)'
@@ -72,18 +72,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Proj = (props) => {
-  const [
-    marginChange,
-    // setMarginChange
-  ] = useState(0);
   const classes = useStyles();
   const [open, setOpen] = useState(false);
   const handleToggle = () => {
     setOpen(!open);
   };
-  useEffect(() => {
-    // setMarginChange(document.querySelector(".overlay-text").clientHeight);
-  }, []);
+
   return (
     <div className={`single-project-container ${useStyles(props.darkMode).root}`}>
       <div className={classes.title}>
@@ -147,7 +141,6 @@ const Proj = (props) => {
       {props.notes && <p>Notes: {props.notes}</p>}
       <div
         style={{
-          marginTop: -marginChange,
           padding: "10px 0",
         }}
       >
