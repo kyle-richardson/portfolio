@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from "react"
 import Typist from "react-typist"
+import "../../stars.css"
 
 
-const Intro = () => {
+const Intro = ({darkMode}) => {
 
     const [showScroll, setShowScroll] = useState(true)
     window.onscroll = () => {
@@ -22,11 +23,12 @@ const Intro = () => {
         }
     }, [showScroll])
     return (
-        <div className="intro-container">
+        <div className={`intro-container ${darkMode ? 'dark-back' : 'light-back'}`}>
             <h1 style={{
                 marginTop: "40vh"
             }}>Hey👋 I'm Kyle Richardson.</h1>
             <br/>
+            {/* <div id="stars"></div> */}
             <Typist avgTypingDelay={70} startDelay={1000}>
                 <span style={{fontSize: "1.8rem", marginTop: '10vh'}}>Computer gamer</span>
                 <Typist.Backspace count={14} delay={600}/>
