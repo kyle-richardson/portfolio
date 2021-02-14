@@ -92,9 +92,70 @@ span {
 	height: 0;
 }
 
+.dark-back {
+	background: linear-gradient(136deg, #000000, #2c266d, #1f3a93);
+}
+
+.light-back {
+	background: linear-gradient(136deg, #ffffff, #81babe, #1ad7c0);
+}
 .intro-container {
 	/* font-family: 'Press Start 2P', cursive; */
-	min-height: 100vh;
+	height: 100vh;
+	width: 100%;
+	/* background: linear-gradient(136deg, #1ad7c0, #1f3a93, #474747); */
+	background-size: 1200% 1200%;
+	-webkit-animation: BackgroundAnimation 40s ease infinite;
+	-moz-animation: BackgroundAnimation 40s ease infinite;
+	-o-animation: BackgroundAnimation 40s ease infinite;
+	animation: BackgroundAnimation 40s ease infinite;
+}
+
+@keyframes BackgroundAnimation {
+	0% {
+		background-position: 0% 7%;
+	}
+	50% {
+		background-position: 100% 94%;
+	}
+	100% {
+		background-position: 0% 7%;
+	}
+}
+@-webkit-keyframes BackgroundAnimation {
+	0% {
+		background-position: 0% 7%;
+	}
+	50% {
+		background-position: 100% 94%;
+	}
+	100% {
+		background-position: 0% 7%;
+	}
+}
+
+@-moz-keyframes BackgroundAnimation {
+	0% {
+		background-position: 0% 7%;
+	}
+	50% {
+		background-position: 100% 94%;
+	}
+	100% {
+		background-position: 0% 7%;
+	}
+}
+
+@-o-keyframes BackgroundAnimation {
+	0% {
+		background-position: 0% 7%;
+	}
+	50% {
+		background-position: 100% 94%;
+	}
+	100% {
+		background-position: 0% 7%;
+	}
 }
 
 .typed-links {

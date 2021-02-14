@@ -7,7 +7,7 @@ import Intro from "./Intro"
 const TopSection = (props) => {
   return (
     <header id="App-header">
-      <Intro />
+      <Intro darkMode={props.darkMode}/>
       {/* <CarouselSection /> */}
       <AboutMe {...props} />
       <ButtonSection {...props} />
