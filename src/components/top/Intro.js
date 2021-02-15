@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react"
 import Typist from "react-typist"
-import "../../stars.css"
+// import "../../stars.css"
 
 
 const Intro = ({darkMode}) => {
@@ -26,7 +26,7 @@ const Intro = ({darkMode}) => {
         <div className={`intro-container ${darkMode ? 'dark-back' : 'light-back'}`}>
             <h1 style={{
                 marginTop: "40vh"
-            }}>Hey👋 I'm Kyle Richardson.</h1>
+            }}>Hey<span role="img" aria-label="wave-emoji">👋</span> I'm Kyle Richardson.</h1>
             <br/>
             {/* <div id="stars"></div> */}
             <Typist avgTypingDelay={70} startDelay={1000}>
@@ -49,7 +49,7 @@ const Intro = ({darkMode}) => {
                 <span style={{fontSize: "1.8rem", marginTop: '10vh'}}>
                     <a className="typed-links" href="#about-me">About Me</a> 
                     {"  "}
-                    <a className="typed-links" href="https://docs.google.com/document/d/e/2PACX-1vTRqxugKuzEeFEsaOtUGa4BrzfCsGuhEWNGOPoqQHdGWDVC2GhLmf2BYMMMyQnkkR1gTv12fz1-McEa/pub" target="_blank">Resume</a> 
+                    <a className="typed-links" href="https://docs.google.com/document/d/e/2PACX-1vTRqxugKuzEeFEsaOtUGa4BrzfCsGuhEWNGOPoqQHdGWDVC2GhLmf2BYMMMyQnkkR1gTv12fz1-McEa/pub" rel="noopener noreferrer" target="_blank">Resume</a> 
                     {"  "}
                     <a className="typed-links" href="#projects">Projects</a>
                 </span>
