@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import CodeIcon from "@material-ui/icons/Code";
 import { InlineIcon } from "@iconify/react";

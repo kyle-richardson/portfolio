@@ -16,11 +16,11 @@ const text = {
   with the help of amazing free resources online, and recently graduated from 
   Lambda School's web developer track. I have an amazing wife, 3 
   kids, and a dog who are the joys of my life. I also enjoy playing video games 
-  when time allows.`,
+  when I can fit it in.`,
   medium: `I absolutely love computers; always have.  Recent events in my life have
   caused me to re-evaluate my career. I am determined to learn all I can and help others
   through computer programming. I recently graduated from Lambda School web development track.
-  I have a proud father and husband, and enjoy playing video games when I can fit it in.`,
+  I am a proud husband and father, and enjoy playing video games when I can fit it in.`,
   short: `I absolutely love computers; always have. I want to help others through what 
   I build.`
 }

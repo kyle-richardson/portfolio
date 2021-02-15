@@ -19,7 +19,6 @@ import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 import CollectionsIcon from "@material-ui/icons/Collections";
 import PortraitIcon from "@material-ui/icons/Portrait";
 import ReceiptIcon from "@material-ui/icons/Receipt";
-import DescriptionIcon from "@material-ui/icons/Description";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
@@ -154,20 +153,6 @@ const Menu = ({ darkMode, setDarkMode }) => {
               primaryTypographyProps={{ variant: "h6" }}
             />
           </ListItem>
-          {/* <ListItem
-            button
-            onClick={() =>
-              window.open("https://resume.kylerichardson.tech", "_blank")
-            }
-          >
-            <ListItemIcon style={{ color: "inherit" }}>
-              <DescriptionIcon fontSize="large" />
-            </ListItemIcon>
-            <ListItemText
-              primary={"Digital Resume"}
-              primaryTypographyProps={{ variant: "h6" }}
-            />
-          </ListItem> */}
           <ListItem
             button
             onClick={() =>
