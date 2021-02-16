@@ -25,7 +25,7 @@ const Intro = ({darkMode}) => {
     return (
         <div className={`intro-container ${darkMode ? 'dark-back' : 'light-back'}`}>
             <h1 style={{
-                marginTop: "40vh"
+                marginTop: "30vh"
             }}>Hey<span role="img" aria-label="wave-emoji" style={{fontSize: "4rem"}}>👋</span> I'm Kyle Richardson.</h1>
             <br/>
             {/* <div id="stars"></div> */}
