@@ -10,6 +10,7 @@ import weightlifting from "../assets/weightlifting.png"
 import chef from "../assets/chef.png"
 import covid from "../assets/covid.png"
 import doreminisce from "../assets/doreminisce.png"
+import adventure from "../assets/adventure.png"
 
 export const projects = [
   // {
@@ -170,5 +171,17 @@ export const projects = [
     ],
     deployed: "aws",
     notes: "Built with small team in 3 months",
+  },
+  {
+    name: "Adventure Game",
+    description:
+      "Simple text adventure game created to help learn python.",
+    url: "https://github.com/kyle-richardson/Adventure-game",
+    github: "https://github.com/kyle-richardson/Adventure-game",
+    image: adventure,
+    tools: ["python"],
+    libraries: ["sys"],
+    deployed: "github pages",
+    notes: "",
   },
 ];

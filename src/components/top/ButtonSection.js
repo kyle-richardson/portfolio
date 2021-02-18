@@ -6,7 +6,7 @@ import {
   faCss3,
   faHtml5,
   faNodeJs,
-  // faPython,
+  faPython,
   faLess,
   faJs,
 } from "@fortawesome/free-brands-svg-icons";
@@ -43,11 +43,11 @@ const buttonList = [
     styleName: "node-js",
     icon: faNodeJs,
   },
-  // {
-  //   text: "PYTHON",
-  //   styleName: "python",
-  //   icon: faPython,
-  // },
+  {
+    text: "PYTHON",
+    styleName: "python",
+    icon: faPython,
+  },
 ];
 
 const ButtonSection = ({ darkMode, searchList, setSearchList }) => {
